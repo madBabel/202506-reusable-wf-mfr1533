@@ -23,6 +23,6 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         needs: call-build
-    steps:
-        - name: Deploy
-          run: echo Deploy
+        steps:
+          - name: Deploy
+            run: echo Deploy
