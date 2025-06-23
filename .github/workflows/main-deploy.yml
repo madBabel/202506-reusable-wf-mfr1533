@@ -12,11 +12,9 @@ on:
 
 jobs:
     call-build:
-        runs-on: ubuntu-latest
-        steps: 
-            - uses: ./.github/workflows/o-workflow.yml
-              with: 
-                    build-status: ${{ inputs.build-status }}
+        uses: ./.github/workflows/o-workflow.yml
+        with: 
+             build-status: ${{ inputs.build-status }}
                 
     deploy:
         runs-on: ubuntu-latest
