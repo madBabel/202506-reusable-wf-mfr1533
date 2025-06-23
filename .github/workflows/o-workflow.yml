@@ -8,7 +8,8 @@ on:
         type: string
         options:
           - success
-          - failure        
+          - failure  
+        required: true      
     outputs: 
       status: ${{ jobs.build.outputs.build-status }}
 
