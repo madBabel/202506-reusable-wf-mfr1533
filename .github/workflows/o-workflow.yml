@@ -1,4 +1,4 @@
-name: Working with Outputs
+name: Working with reusables
 
 on:
   workflow_call:
