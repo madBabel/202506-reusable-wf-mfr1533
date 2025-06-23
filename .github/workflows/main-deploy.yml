@@ -15,7 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
             - name: Llamada
-              uses: .github/workflows/o-workflow.yml
+              uses: ./.github/workflows/o-workflow.yml
               with: 
                     build-status: ${{ inputs.build-status }}
 
