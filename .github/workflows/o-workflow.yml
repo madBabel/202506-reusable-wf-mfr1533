@@ -1,11 +1,11 @@
 name: Working with Outputs
 
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       build-status:
         description: "Choose the build status for the demo"
-        type: choice
+        type: string
         options:
           - success
           - failure        
