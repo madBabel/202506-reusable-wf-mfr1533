@@ -6,9 +6,6 @@ on:
       build-status:
         description: "Choose the build status for the demo"
         type: string
-        options:
-          - success
-          - failure  
         required: true      
     outputs: 
       status: ${{ jobs.build.outputs.build-status }}
