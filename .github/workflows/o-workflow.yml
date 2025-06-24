@@ -8,7 +8,8 @@ on:
         type: string
         required: true      
     outputs: 
-      status: ${{ jobs.build.outputs.build-status }}
+      status: 
+        value: ${{ jobs.build.outputs.build-status }}
 
 jobs: 
   build:
